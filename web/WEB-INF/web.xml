@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>AdminImgData</servlet-name>
+        <servlet-class>org.vicky.AdminImgData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaleImgData</servlet-name>
+        <servlet-class>org.vicky.SaleImgData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>emailChecking</servlet-name>
+        <servlet-class>org.vicky.emailChecking</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mailChecking</servlet-name>
+        <servlet-class>org.vicky.mailChecking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminImgData</servlet-name>
+        <url-pattern>/AdminImgData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaleImgData</servlet-name>
+        <url-pattern>/SaleImgData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>emailChecking</servlet-name>
+        <url-pattern>/emailChecking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mailChecking</servlet-name>
+        <url-pattern>/mailChecking</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>loginform.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
